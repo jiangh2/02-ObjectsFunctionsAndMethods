@@ -19,18 +19,23 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 ###############################################################################
 
 import rosegraphics as rg
-
+import math
 
 def main():
+    answer = hypotenuse(3, 4)
+    print(answer)
+    function4('blue',    1)
+
     """
     TESTS the functions that you will write below.
     You write the tests per the _TODO_s below.
     """
 
 
+
 ###############################################################################
 #
-# TODO: 3a.  Define a function immediately blow this _TODO_.
+# DONE: 3a.  Define a function immediately blow this _TODO_.
 #   It takes two arguments that denote, for a right triangle,
 #   the lengths of the two sides adjacent to its right angle,
 #   and it returns the length of the hypotenuse of that triangle.
@@ -38,15 +43,19 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 3b.  In main, CALL your function and print the returned value,
+# DONE: 3b.  In main, CALL your function and print the returned value,
 #   to test whether you defined the function correctly.
 #
 ###############################################################################
 
 
+def hypotenuse(x, y):
+    return(math.sqrt(x**2 + y**2))
+
+
 ###############################################################################
 #
-# TODO: 4a.  Define a function immediately below this _TODO_.
+# DONE: 4a.  Define a function immediately below this _TODO_.
 #   It takes two arguments:
 #     -- a string that represents a color (e.g. 'red')
 #     -- a positive integer that represents the thickness of a Pen.
@@ -68,10 +77,21 @@ def main():
 #
 #   You may name the function and its parameters whatever you wish.
 #
-# TODO: 4b.  In main, CALL your function at least TWICE (with different values
+# DONE: 4b.  In main, CALL your function at least TWICE (with different values
 #   for the arguments) to test whether you defined the function correctly.
 #
 ###############################################################################
+def function4(color,    thick):
+    window  =   rg.TurtleWindow()
+    alpha = rg.SimpleTurtle('turtle')
+    alpha.pen = rg.Pen('green', thick)
+    beta = rg.SimpleTurtle('turtle')
+    beta.pen = rg.Pen(color, 5)
+    alpha.forward(100)
+    beta.backward(100)
+    window.close_on_mouse_click()
+
+
 
 
 ###############################################################################
