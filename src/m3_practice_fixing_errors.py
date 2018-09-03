@@ -3,11 +3,11 @@ This module lets you practice correcting SYNTAX (notation) errors.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
          their colleagues and Hao Jiang.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Locate the syntax (notation) errors in this file
 #   by looking for red underlines.
 #
