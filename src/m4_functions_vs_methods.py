@@ -101,7 +101,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -166,7 +166,6 @@ def try_functions():
     #    If you think it needs more, ** ASK FOR HELP. **
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
-    jump_and_move_turtle()
 
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
@@ -202,7 +201,7 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
@@ -212,12 +211,12 @@ def try_methods_and_functions():
     beta    =   rg.SimpleTurtle()
     beta.pen=   rg.Pen('blue',  5)
     beta.backward(150)
-    beta.speed(1)
+    beta.speed=1
     draw_many_squares(beta, 2,  100,    30)
-    beta.speed(5)
+    beta.speed=5
     beta.pen=   rg.Pen('red',   5)
     draw_many_squares(beta, 10, 50, 15)
-    beta.speed(100)
+    beta.speed=100
     beta.pen=   rg.Pen('red',   35)
     draw_many_squares(beta, 8,  300,    60)
     beta.pen=   rg.Pen('black', 3)
