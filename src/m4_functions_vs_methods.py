@@ -29,10 +29,10 @@ def main():
     """
     window = rg.TurtleWindow()
 
-    # run_example()
-    # try_methods()
+    run_example()
+    try_methods()
     try_functions()
-    # try_methods_and_functions()
+    try_methods_and_functions()
 
     window.close_on_mouse_click()  # Your code must be ABOVE this statement
 
@@ -158,7 +158,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -169,7 +169,7 @@ def try_functions():
 
     jump_and_move_turtle(200,100,300,30)
     jump_and_move_turtle(100,200,0,0)
-
+    jump_and_move_turtle(-50,50,100,100)
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
