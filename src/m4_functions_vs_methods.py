@@ -4,12 +4,12 @@ Demonstrates using (calling) FUNCTIONS and using (calling) METHODS:
   -- how they differ.
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and Vibha Alangar.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Vibha Alangar Hao Jiang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   With your instructor, READ the file   methods_vs_functions.txt
 #   in this project, ASKING QUESTIONS as needed to understand its contents.
 #   After you have done so, mark this _TODO_ as DONE
@@ -73,11 +73,11 @@ def jump_and_move_turtle(x1, y1, x2, y2):
 def draw_many_squares(my_turtle, number_of_squares, size, twist):
     """
     Makes the given   SimpleTurtle   object draw:
-      -- many squares (how many? answer: NUMBER_OF_SQUARES)
+      -- many squares (how many? answer: 3)
     where each square:
-      -- has the same size (what size? answer: SIZE)
+      -- has the same size (what size? answer: 75)
     and each square is:
-      -- "twisted" a bit from the previous one (how much? TWIST degrees)
+      -- "twisted" a bit from the previous one (how much? 15 degrees)
 
     NOTE: The 3 lines below that begin with   :type   are called
     "type hints".  They make the "dot" trick work more effectively.
@@ -101,7 +101,7 @@ def draw_many_squares(my_turtle, number_of_squares, size, twist):
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   There are four FUNCTIONS defined ABOVE this:
 #     main
 #     run_example
@@ -138,9 +138,15 @@ def try_methods():
       -- backward  100 units
     """
     ###########################################################################
-    # TODO: 3. Implement and test this function, per its doc-string above.
+    # DONE: 3. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     ###########################################################################
+    alpha   =   rg.SimpleTurtle()
+    alpha.pen=  rg.Pen('brown', 5)
+    alpha.forward(150)
+    alpha.left(90)
+    alpha.forward(50)
+    alpha.backward(100)
 
 
 def try_functions():
@@ -152,7 +158,7 @@ def try_functions():
      -- One jumps to (-50, 50), then moves (while drawing) to (100, 100)
     """
     ###########################################################################
-    # TODO: 4. Implement and test this function, per its doc-string above.
+    # DONE: 4. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #    NOTE: This function requires
@@ -161,7 +167,9 @@ def try_functions():
     #    HINT: see   jump_and_move_turtle   above.
     ###########################################################################
 
-
+    jump_and_move_turtle(200,100,300,30)
+    jump_and_move_turtle(100,200,0,0)
+    jump_and_move_turtle(-50,50,100,100)
 def try_methods_and_functions():
     # IMPORTANT: Read the NOTE below before you try to solve this TO-DO!
     """
@@ -196,14 +204,28 @@ def try_methods_and_functions():
       8. Draw a SQUARE whose sides are each of length 50.
     """
     ###########################################################################
-    # TODO: 5. Implement and test this function, per its doc-string above.
+    # DONE: 5. Implement and test this function, per its doc-string above.
     #   The testing code (in main) is already written for you.
     #
     #   NOTE: This function should ** CALL ** the
     #     draw_many_squares
     #   function defined above.  If you don't see why, ** ASK FOR HELP. **
     ###########################################################################
-
+    beta    =   rg.SimpleTurtle()
+    beta.pen=   rg.Pen('blue',  5)
+    beta.backward(150)
+    beta.speed=1
+    draw_many_squares(beta, 2,  100,    30)
+    beta.speed=5
+    beta.pen=   rg.Pen('red',   5)
+    draw_many_squares(beta, 10, 50, 15)
+    beta.speed=100
+    beta.pen=   rg.Pen('red',   35)
+    draw_many_squares(beta, 8,  300,    60)
+    beta.pen=   rg.Pen('black', 3)
+    beta.backward(200)
+    beta.draw_circle(30)
+    beta.draw_square(50)
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
