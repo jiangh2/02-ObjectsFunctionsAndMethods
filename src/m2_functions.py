@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Hao Jiang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -17,10 +17,8 @@ Authors: David Mutchler, Dave Fisher, Vibha Alangar, Amanda Stouder,
 #     then select  Mark Directory As  ~  Sources Root.
 #
 ###############################################################################
-
-import rosegraphics as rg
 import math
-
+import rosegraphics as rg
 def main():
     answer = hypotenuse(3, 4)
     print(answer)
